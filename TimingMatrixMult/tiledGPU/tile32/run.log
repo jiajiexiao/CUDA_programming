@@ -1,0 +1,28 @@
+nvcc -o MatrixMultTiled MatrixMultTiled.cu
+Two random 5X5 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 2.0608000639e-08 seconds
+Two random 10X10 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 2.0671999224e-08 seconds
+Two random 50X50 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 2.6559998645e-08 seconds
+Two random 100X100 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 4.4928000875e-08 seconds
+Two random 500X500 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 6.4790395982e-07 seconds
+Two random 1000X1000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 1.6823360056e-06 seconds
+Two random 2000X2000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 4.9784002840e-06 seconds
+Two random 2718X2718 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 9.0068797363e-06 seconds
+Two random 3000X3000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 1.1356320101e-05 seconds

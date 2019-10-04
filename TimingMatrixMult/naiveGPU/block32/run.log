@@ -1,0 +1,28 @@
+nvcc -o MatrixMultNaive MatrixMultNaive.cu
+Two random 5X5 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 1.2320000131e-08 seconds
+Two random 10X10 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 1.3343999683e-08 seconds
+Two random 50X50 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 3.2063997679e-08 seconds
+Two random 100X100 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 5.3087997998e-08 seconds
+Two random 500X500 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 3.8931839299e-06 seconds
+Two random 1000X1000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 3.2143008866e-05 seconds
+Two random 2000X2000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 2.5131975417e-04 seconds
+Two random 2718X2718 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 6.3128548209e-04 seconds
+Two random 3000X3000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 8.4383366629e-04 seconds

@@ -1,0 +1,19 @@
+nvcc -o pimc PiMC.cu
+785584900	1000000000	100	10000.
+The computed Pi has a value of 3.142340.
+78534900	100000000	100	1000.
+The computed Pi has a value of 3.141396.
+7846800	10000000	100	100.
+The computed Pi has a value of 3.138720.
+789700	1000000	100	10.
+The computed Pi has a value of 3.158800.
+77900	100000	100	1.
+The computed Pi has a value of 3.116000.
+7900	10000	10	1.
+The computed Pi has a value of 3.160000.
+822	1000	1	1.
+The computed Pi has a value of 3.288000.
+77	100	1	1.
+The computed Pi has a value of 3.080000.
+8	10	1	1.
+The computed Pi has a value of 3.200000.

@@ -1,0 +1,10 @@
+gcc -o pimc PiMC.c -std=c99
+The computed Pi has a value of 3.141525.
+The computed Pi has a value of 3.142046.
+The computed Pi has a value of 3.141773.
+The computed Pi has a value of 3.138572.
+The computed Pi has a value of 3.142720.
+The computed Pi has a value of 3.160400.
+The computed Pi has a value of 3.196000.
+The computed Pi has a value of 3.200000.
+The computed Pi has a value of 3.600000.

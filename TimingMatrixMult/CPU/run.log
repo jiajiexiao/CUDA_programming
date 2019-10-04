@@ -1,0 +1,27 @@
+Two random 5X5 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 0.000003 seconds
+Two random 10X10 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 0.000006 seconds
+Two random 50X50 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 0.001278 seconds
+Two random 100X100 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 0.007683 seconds
+Two random 500X500 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 0.696308 seconds
+Two random 1000X1000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 5.468917 seconds
+Two random 2000X2000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 49.849365 seconds
+Two random 2718X2718 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 182.633621 seconds
+Two random 3000X3000 matrices are going to be generated for the multiplication.
+The product is computed.
+ Execution time is 193.849518 seconds

@@ -1,0 +1,4 @@
+nvcc -o nbody nbody.o
+Thu Dec  7 18:04:09 EST 2017
+Requested Timesteps: 100.
+Thu Dec  7 18:04:16 EST 2017

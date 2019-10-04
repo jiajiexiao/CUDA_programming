@@ -1,0 +1,76 @@
+/*
+CSC691 GPU programming
+Project 3: Pi Time
+Jiajie Xiao
+Oct 23, 2017
+*/
+
+
+#include <stdio.h> 
+#include <time.h>
+#define CHUNK 100000 
+
+int partialHist(char *input, int len ,int *hist)
+{
+	for (int idx=0;idx<len;idx++)	
+	{
+		//printf("%c\t%d\n",input[idx],input[idx]-'0');
+		hist[input[idx]-'0']++; // Treat the input numbers as indices
+	}
+	return 0;
+}
+
+int main(int argc, char **argv)
+{
+        FILE *inputFile, *outputFile; 
+
+        if (argc < 2)
+        {
+                printf("An input file name is required.");
+                return -1;
+        }
+        else
+                inputFile = fopen(argv[1],"r");
+
+        if (ferror(inputFile))
+        {
+                perror("Error: ");
+                return -1;
+        }
+        else
+        {
+                char buf[CHUNK];
+                int histc[10] = {0,0,0,0,0,0,0,0,0,0};
+                size_t nread;
+
+                clock_t start_cpu, stop_cpu;
+    			float milliseconds_cpu = 0;
+
+                while((nread = fread(buf, 1, sizeof(buf), inputFile)) > 0)
+                {
+                	start_cpu = clock();
+                	//printf("%d\n",(int)nread);
+                    partialHist(buf,(int)nread, histc); 
+                    stop_cpu = clock();
+    				milliseconds_cpu += 1000.0*(stop_cpu-start_cpu)/(float)CLOCKS_PER_SEC;
+                }
+                fclose(inputFile);
+				printf("The histograming calculation time (ms): %f\n", milliseconds_cpu);
+
+				outputFile = fopen("hist.txt", "w");
+				if (ferror(inputFile))
+       			{
+                	perror("Error: ");
+                	return -1;
+        		}
+       			else
+        		{
+					for(int n=0;n<10;n++)
+					{
+						fprintf(outputFile, "%d:%d\t", n, histc[n]);
+					}
+                	fclose(outputFile);
+        		}
+        }
+        return 0;
+}
