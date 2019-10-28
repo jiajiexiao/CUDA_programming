@@ -1,2 +1,2 @@
 # CUDA_programming
-Some simple CUDA codes for GPU programming.
+Some CUDA codes for GPU programming.
